@@ -433,4 +433,9 @@
     .cart-page .checkout {
         padding: 40px 9% 0;
     }
+    .footer .contact p{
+        font-size: 1rem;
+        align-items: center;
+        color: rgb(45, 45, 45);
+    }
 }
