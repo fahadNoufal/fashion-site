@@ -13,6 +13,20 @@
     .menu-icon{
         right: 15%;
     }
+    /*new code*/
+    
+    .cart-icon{
+        right: 24%;
+        top: 58px;
+        font-size: 42px;
+    }
+    .cart-item-no{
+        top: 84px;
+        right: 23%;
+        width: 27px;
+        height: 27px;
+        font-size: 0.9rem;
+    }
     .close-menu-icon{
         right: 71%;
         visibility: hidden;
@@ -132,6 +146,21 @@
     .menu-icon {
         top: 37px;
     }
+
+    /* new code */
+    .cart-icon {
+        font-size: 25px;
+        right: 26%;
+        top:45px;
+    }
+    .cart-item-no{
+        top: 60px;
+        right: 24%;
+        width: 22px;
+        height:22px;
+        font-size: 0.74rem;
+    }
+
     .front-page{
         margin-top: 110px;
         height: 70vh;
@@ -154,6 +183,15 @@
         width: 240px;
         line-height: 1.2;
     }
+
+    .featured-products.section-padding{
+        padding: 55px 5%;
+    }
+
+    .features-row div{
+        border-radius: 5px;
+    }
+
     .front-page button {
         padding: 15px 70px 15px 50px;
         font-size: 1.1rem;
@@ -188,14 +226,13 @@
     .f-products {
         justify-content: space-between;
     }
-    .featured-products .item {
-        margin: 0 10px 15px 0;
-    }
+
     h6 {
         font-size: 1rem;
     }
     .featured-products .item {
-        width: 140px;
+        width: 149px;
+        margin: 0 10px 20px 0;
     }
     .featured-products p {
         font-size: 0.6rem;
@@ -252,6 +289,7 @@
     .close-menu-icon{
         font-size: 35px;
     }
+    
     .nav-links {
         width: 175px;
     }
