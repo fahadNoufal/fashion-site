@@ -1,29 +1,36 @@
 @media (max-width:850px) {
     #navbar {
         align-items: normal;
-        height: 160px;
-        padding: 0 0 0 15%;
+        height: 100px;
+        padding: 0 0 0 8%;
     }
     #navbar img{
-        height: 60px;
+        height: 40px;
         width: auto;
         margin-top: auto;
         margin-bottom: auto;
-    }    
+    } 
+    
+    .mobile-nav-icons{
+        display:block;
+    }
     .menu-icon{
-        right: 15%;
+        right: 10%;
     }
     /*new code*/
     
     .cart-icon{
-        right: 24%;
-        top: 58px;
+        right: 19%;
+        top: 30px ;
+        scale: 0.8;
         font-size: 42px;
+        margin-right: 15px;
     }
     .cart-item-no{
-        top: 84px;
-        right: 23%;
+        top: 54px;
+        right: 19%;
         width: 27px;
+        background-color: #ff1818;
         height: 27px;
         font-size: 0.9rem;
     }
@@ -32,6 +39,10 @@
         visibility: hidden;
     }
 
+    .menu-icon{
+        top: 30px;
+        scale: 0.7;
+    }
     .nav-links {
         display: flex;
         align-items: flex-start;
@@ -70,16 +81,12 @@
         transition: 0.2s;
     }
     .front-page {
-        height: 75vh;
-        background-position: right 25% top 20%;
-        margin-top: 155px;
+        height: 95svh;
+        background-position: right 35% top 20%;
     }
     .front-page button {
-        padding: 30px 130px 30px 100px;
-        font-size: 1.5rem;
-        margin-top: 20px;
-        background-size: contain;
-        margin-left: -30px;
+        font-size: 1.3rem;
+        border-radius: 4px;
     }
     .features-row {
         row-gap: 70px;
@@ -100,14 +107,18 @@
         background-color: white;
     }
     .banners {
-        row-gap: 80px;
+        row-gap: 70px;
+        flex-wrap: wrap ;
     }
     .banners div{
         border-radius: 5px;
     }
+    .b-one{
+        display: block;
+    }
     .b-two {
         row-gap: 50px;
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .b-two div {
     min-width:86%; 
@@ -135,48 +146,50 @@
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:470px) {
     #navbar {
-        height: 120px;
+        height: 80px;
         padding: 0 0 0 5%;
     }
     #navbar img {
         height: auto;
     }
+    .mobile-nav-icons{
+        display:block;
+        margin-top: -20px;
+    }
     .menu-icon {
-        top: 37px;
+        top: 32px;
+        scale: 1;
     }
 
     /* new code */
     .cart-icon {
         font-size: 25px;
-        right: 26%;
-        top:45px;
+        right: 20%;
+        scale: 1.1;
     }
     .cart-item-no{
-        top: 60px;
-        right: 24%;
+        top: 44px;
+        right: 21%;
         width: 22px;
         height:22px;
         font-size: 0.74rem;
-    }
-
-    .front-page{
-        margin-top: 110px;
-        height: 70vh;
     }
     h4 {
         font-size: 20px;
     }
     .front-page h4{
         margin-top: 60px;
+        display: none;
     }
     h2 {
-        font-size: 38px;
+        font-size: 4rem;
         margin: 5px 0;
     }
     h1 {
-        font-size: 41px;
+        font-size: 2rem;
+        color: rgb(54, 54, 54);
     }
     p {
         font-size: 1.1rem;
@@ -193,7 +206,6 @@
     }
 
     .front-page button {
-        padding: 15px 70px 15px 50px;
         font-size: 1.1rem;
         margin-top: 0;
     }
@@ -245,18 +257,21 @@
     }
     .banners div {
         height: 20vh;
-        width: 100%;
         min-width: auto;
     }
     .banners {
         row-gap: 35px;
+        flex-wrap: wrap ;
     }
+
     .banners .section-padding{
         padding: 0 0;
     }
     .banners.b-one  {
         padding-top: 0px;
-        padding-bottom: 0px
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
     }
     .banners.b-two{
         padding-top: 0px;
@@ -283,11 +298,8 @@
     .menu-icon{
         font-size: 27px;
     }
-    .menu-icon {
-        top: 47px;
-    }
     .close-menu-icon{
-        font-size: 35px;
+        font-size: 32px;
     }
     
     .nav-links {

@@ -59,6 +59,8 @@ button.normal{
     margin: 0;
     padding: 35px 5%;
     position:fixed;
+    overflow: hidden;
+    position: relative;
     z-index: 99;
     top: 0;
     left: 0;
@@ -101,9 +103,12 @@ button.normal{
     right:-15%;
     transition: 0.2s;
 }
+.mobile-nav-icons{
+    display: none;
+}
 .cart-icon{
     position: absolute;
-    top:45px;
+    top:32px;
     right:-26%;
     transition: 0.2s;
 }
@@ -137,36 +142,41 @@ button.normal{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 120px;
 }
 .front-page .inside-text{
     padding-left: 5%;
 }
 .front-page h2{
-    color:#088178;
+    color:#24a0ed;
 }
 .front-page p{
     color:gray;
     margin-top: 10px;
 }
 .front-page button{
-    background-color: transparent;
-    background-image:url("images/button.png");
+    /* background-color: transparent; */
+    /* background-image:url("images/button.png"); */
+    background-color: #24a0ed;
+    color: white;
     border: none;
-    padding: 18px 75px 20px 65px;
+    padding: 0.8rem 2rem;
     background-repeat: no-repeat;
     font-size: 1.1rem;
     font-weight:700;
-    color: #088178;
+    /* color: #088178; */
+    margin-top: 1rem;
     cursor: pointer;
 }
 
 /* Features row */
 .features-row{
+    margin: 100px 0 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 0.5rem;
+    row-gap: 2rem;
 }
 .features-row div{
     align-items: center;
@@ -242,7 +252,7 @@ button.normal{
 .f-products{
     display: flex;
     flex-wrap:wrap ;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Service section */
@@ -275,8 +285,8 @@ button.normal{
 /* banner-section */
 .banners {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap ;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap ; */
 }
 .b-one{
     padding-top: 15px;
@@ -292,7 +302,7 @@ button.normal{
     justify-content: center;
     color:white;
     height: 40vh;
-    min-width:580px;
+    /* min-width:580px; */
     padding: 40px;
     transition: 0.2s;
     cursor: pointer;
@@ -314,18 +324,21 @@ button.normal{
 }
 .banners .buy-get{
     background-image: url("images/banner/b17.jpg");
+    flex: 1;
 }
 
 /* banner -2 */
 
 .b-two{
     padding-top: 8px;
+    display: flex;
     padding-bottom: 60px;
 }
 .b-two div{
-    min-width:320px;
+    /* min-width:320px; */
+    flex: 1;
     height: 25vh;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding-left:30px ;
     padding-right: 50px;
 }
@@ -339,6 +352,7 @@ button.normal{
 }
 .banners .upcomming-season{
     background-image: url("images/banner/b10.jpg");
+    flex: 1;
 }
 .banners .seasonal-sales{
     background-image: url("images/banner/b7.jpg");
@@ -485,9 +499,6 @@ button.normal{
 
 */
 
-.single-shop-page{
-    margin-top: 120px;
-}
 .single-shop-page .product-details{
     display: flex;
     padding: 80px 60px 30px 100px;
